@@ -62,7 +62,7 @@ export const Navbar = () => {
                         (rol === 'ADMIN_ROLE')
                             ? <NavLink
                                 className={({ isActive }) => `nav-link ${isActive ? `active` : ``}`}
-                                to="/adnin"
+                                to="/admin"
                             >
                                 Admin
                             </NavLink>
@@ -75,7 +75,7 @@ export const Navbar = () => {
                         (rol === 'USER_ROLE')
                             ? <NavLink
                                 className={({ isActive }) => `nav-link ${isActive ? `active` : ``}`}
-                                to="/use"
+                                to="/user"
                             >
                                 User
                             </NavLink>

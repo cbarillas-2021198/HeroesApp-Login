@@ -14,11 +14,11 @@ export const LoginPage = () => {
 
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [username, setUsername] = useState('');
+  const [nombre, setnombre] = useState('');
 
   const onLogin = () => {
     const lastPath = localStorage.getItem('lastPath') || '/';
-    login(username); 
+    login(nombre); 
     navigate(lastPath, {
       replace: true
     })
